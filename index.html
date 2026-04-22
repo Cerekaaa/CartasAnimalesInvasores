@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarjeta Monjita Tricolor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="background-plants" aria-hidden="true">
+    <span class="plant plant-1"></span>
+    <span class="plant plant-2"></span>
+    <span class="plant plant-3"></span>
+    <span class="plant plant-4"></span>
+    <span class="plant plant-5"></span>
+    <span class="plant plant-6"></span>
+  </div>
+
+  <div class="scene">
+    <div class="pokemon-card" id="card">
+      <div class="card-zoom">
+        <div class="card-flip">
+
+          <div class="card-face card-front">
+            <div class="card-inner">
+              <div class="top-bar">
+                <div>
+                  <h1 class="species-name">Caracol café de jardín</h1>
+                  <div class="scientific-name">Cornu aspersum</div>
+                </div>
+                <div class="badge-type">INVASORA</div>
+              </div>
+
+              <div class="image-frame line-frame"></div>
+
+              <div class="info-box">
+                <div class="info-title">Dato curioso</div>
+                <p class="curious-fact">
+                   Sus “cuernitos” no son cuernos de verdad, sino tentáculos. Los de arriba le sirven para ver y los de abajo para oler y tocar. Cuando se asusta, los esconde rápidamente dentro de su cuerpo.
+                </p>
+              </div>
+
+              <div class="audio-zone no-flip">
+                <h2 class="attack-title">Audio explicativo</h2>
+                <p class="attack-text">
+                  audio
+                  Sofía, tiene un mensaje para ti, da clic en el botón para escucharlo.
+
+                </p>
+                <button class="sound-btn no-flip" id="playSound">🎧 Escuchar sonido</button>
+              </div>
+
+              <div class="hold-indicator">Desliza la carta con el dedo para girarla</div>
+              <div class="footer-mini"></div>
+            </div>
+          </div>
+
+          <div class="card-face card-back">
+            <div class="back-inner">
+              <img src="https://www.naturalezaparatodos.es/wp-content/uploads/2019/02/Cornu-aspersum1-web.gif"
+                alt="Imagen completa del caracol café de jardín">
+              <div class="back-overlay"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <audio id="speciesAudio" src="audio de las cartas/audiocaracol.mp3"></audio>
+  <script src="magia.js"></script>
+</body>
+
+</html>
